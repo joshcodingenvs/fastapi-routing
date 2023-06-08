@@ -18,6 +18,7 @@ async def home():
 async def user(user_name: str ):
     return "Welcome Dev: {}".format(user_name)
 
+# the q is the query parameter
 @router.get("/item/{itemID}")
 async def user(itemID: int, q: Union[str, None] = None ):
     return "Item found: {}".format(itemID)
